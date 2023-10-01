@@ -453,6 +453,7 @@ main {
 .demo {
   text-align: center;
   margin: 0 auto;
+  padding: 3em 0;
 }
 .demo p {
   color: var(--neutral-black, #263238);
@@ -480,6 +481,100 @@ main {
 }
 .demo button:hover {
   opacity: 0.8;
+}
+.row {
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 3em;
+  /* margin: 0 auto; */
+}
+.footer-col1 p:first-child {
+  margin: 1em;
+}
+.footer-col1 p:nth-child(2),
+.footer-col1 p:nth-child(3) {
+  color: var(--neutral-silver, #f5f7fa);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  margin-bottom: 0.5em;
+}
+.sociallinks {
+  display: flex;
+  gap: 1em;
+  /* justify-content: space-between; */
+  align-items: center;
+}
+.footer-col,
+.footer-col1 {
+  padding: 1em;
+}
+.footer-col h4 {
+  color: var(--neutral-white, #fff);
+
+  /* Heading/Headline 4 */
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px; /* 140% */
+}
+.footer-col ul li a {
+  color: var(--neutral-silver, #f5f7fa);
+
+  /* Body/Regular/Body 3 */
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  padding: 0.5em 0;
+}
+.fieldInput {
+  display: flex;
+  margin: 20px auto;
+  width: 100%;
+  height: 35px;
+  position: relative;
+  box-shadow: 0 4px 10px 0 rgba(255, 255, 255, 0.375);
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: var(--dark-neutral-color);
+  padding: 0.3em 0;
+}
+.form-input {
+  width: 200px;
+  background: var(--dark-neutral-color);
+  border: none;
+  padding: 12px 20px;
+  font-size: 14px;
+  color: var(--light-color);
+}
+.form-input:focus {
+  outline: none;
+}
+.form-submit {
+  font-size: 18px;
+  color: var(--light-color);
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 70px;
+  height: 35px;
+  border-radius: 17px;
+  border: none;
+  background: var(--dark-neutral-color);
+  box-shadow: 5px -2px 81px 1px rgba(0, 0, 0, 0.09);
+  cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+  background: var(--neutral-black, #263238);
 }
 /* RESPONSIVE  */
 /* HEADER */
@@ -621,5 +716,9 @@ main {
   .demo p {
     width: 60%;
     margin: 0 auto;
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
