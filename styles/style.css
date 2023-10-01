@@ -213,6 +213,7 @@ main {
   font-weight: 400;
   line-height: 24px;
   margin-top: 1rem;
+  margin-bottom: 1em;
 }
 .manage-box {
   padding: 1rem;
@@ -276,6 +277,61 @@ main {
 }
 .pex-box button:hover {
   opacity: 0.8;
+}
+
+/* REINVENT */
+.reinvent {
+  background: var(--neutral-silver, #f5f7fa);
+  margin-top: 2em;
+}
+.reinvent-box {
+  padding: 1em;
+}
+.invent-box1 p:first-child {
+  color: var(--neutral-d-grey, #4d4d4d);
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 44px;
+}
+.invent-box1 p span {
+  color: var(--brand-primary, #4caf4f);
+}
+.invent-box1 p:last-child {
+  color: var(--text-gray-900, #18191f);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.invent-box1 {
+  margin-bottom: 1em;
+}
+.invent-box2 {
+  display: flex;
+  gap: 2em;
+}
+.inner-vent {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  box-shadow: 0px 2px 4px 0px rgba(171, 190, 209, 0.2);
+  border: 0.5px solid rgba(171, 190, 209, 0.2);
+}
+.inner-vent .vent-text p:first-child {
+  color: var(--neutral-d-grey, #4d4d4d);
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+.inner-vent .vent-text p:last-child {
+  color: var(--neutral-grey, #717171);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
 }
 
 /* RESPONSIVE  */
@@ -378,5 +434,23 @@ main {
   .pex-box,
   .pex-box1 {
     flex: 1;
+  }
+  .invent-box1 p:first-child {
+    font-size: 36px;
+  }
+  .reinvent-box {
+    display: flex;
+    gap: 2em;
+    padding: 2em 1em;
+  }
+  .invent-box1,
+  .invent-box2 {
+    flex: 1;
+  }
+  .inner-vent {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    padding: 1em;
   }
 }
