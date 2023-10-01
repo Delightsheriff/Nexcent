@@ -241,6 +241,42 @@ main {
   font-weight: 400;
   line-height: 20px;
 }
+/* PEXELS */
+.pexel {
+  padding: 1em;
+}
+.pex-box p:first-child {
+  color: var(--neutral-d-grey, #4d4d4d);
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 44px;
+}
+.pex-box p:nth-child(2) {
+  color: var(--neutral-grey, #717171);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  margin-top: 1rem;
+}
+.pex-box button {
+  border-radius: 4px;
+  background: var(--brand-primary, #4caf4f);
+  padding: 14px 32px;
+  color: var(--neutral-white, #fff);
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  margin-top: 2rem;
+  border: none;
+}
+.pex-box button:hover {
+  opacity: 0.8;
+}
 
 /* RESPONSIVE  */
 /* HEADER */
@@ -331,5 +367,16 @@ main {
     gap: 1rem;
     padding: 1em;
     margin-top: 3rem;
+  }
+  .pexel {
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+  }
+  .pex-box,
+  .pex-box1 {
+    flex: 1;
   }
 }
