@@ -1,0 +1,45 @@
+.landing {
+  padding: 5rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.landbox-1 {
+  width: 60%;
+}
+.landbox-2 {
+  width: 40%;
+}
+.landbox-1 p:first-child {
+  color: var(--neutral-d-grey, #4d4d4d);
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 600;
+}
+.landbox-1 p span {
+  color: var(--brand-primary, #4caf4f);
+}
+.landbox-1 p:nth-child(2) {
+  color: var(--neutral-grey, #717171);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  margin-top: 1rem;
+}
+.landbox-1 button {
+  border-radius: 4px;
+  background: var(--brand-primary, #4caf4f);
+  padding: 14px 32px;
+  border: none;
+  color: var(--neutral-white, #fff);
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  margin-top: 1.5rem;
+}
+.landbox-1 button:hover {
+  opacity: 0.8;
+}

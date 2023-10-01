@@ -18,9 +18,15 @@ a {
   text-decoration: none;
 }
 /* Header styling */
+header {
+  background: var(--neutral-silver, #f5f7fa);
+}
 .nav-center {
   display: block;
   padding: 1rem;
+  background: var(--neutral-silver, #f5f7fa);
+  border-bottom: 1px solid #4caf4f;
+  box-shadow: 0px 2px 4px 0px rgba(171, 190, 209, 0.2);
 }
 
 .nav-header {
@@ -109,6 +115,50 @@ a {
   height: 20rem;
   transition: all 0.3s linear;
 }
+/* LANDING PAGE */
+main {
+  background: var(--neutral-silver, #f5f7fa);
+}
+.landing {
+  padding: 2em 1em;
+}
+.landbox-1 p:first-child {
+  color: var(--neutral-d-grey, #4d4d4d);
+  font-size: 2.8rem;
+  font-style: normal;
+  font-weight: 600;
+}
+.landbox-1 p span {
+  color: var(--brand-primary, #4caf4f);
+}
+.landbox-1 p:nth-child(2) {
+  color: var(--neutral-grey, #717171);
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  margin-top: 1rem;
+}
+.landbox-1 button {
+  border-radius: 4px;
+  background: var(--brand-primary, #4caf4f);
+  padding: 14px 32px;
+  border: none;
+  color: var(--neutral-white, #fff);
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  margin-top: 1.5rem;
+}
+.landbox-1 button:hover {
+  opacity: 0.8;
+}
+.landbox-2 img {
+  max-width: 100%;
+  object-fit: contain;
+}
 
 /* RESPONSIVE  */
 /* HEADER */
@@ -172,5 +222,25 @@ a {
   }
   .nav-btns button {
     margin: 0 0.5rem;
+  }
+}
+/* LANDING PAGE */
+@media screen and (min-width: 800px) {
+  .landing {
+    padding: 5rem 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 3em;
+    align-items: center;
+  }
+  .landbox-1 {
+    width: 50%;
+  }
+  .landbox-2 {
+    width: 50%;
+  }
+  main,
+  header {
+    background: var(--neutral-silver, #f5f7fa);
   }
 }
